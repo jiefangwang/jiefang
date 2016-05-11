@@ -1,0 +1,240 @@
+.cs-south {
+	height: 25px;
+	background: url('themes/gray/images/panel_title.gif') repeat-x;
+	padding: 0px;
+	text-align: center;
+}
+.pagination{
+	zoom:1;
+}
+.pagination table{
+	float:left;
+	height:30px;
+}
+.panel{
+	overflow:hidden;
+	font-size:12px;
+}
+.panel-header{
+	padding:5px;
+	line-height:15px;
+	color:#3F3F3F;
+	font-weight:bold;
+	font-size:12px;
+	background:url('images/panel_title.gif') repeat-x;
+	position:relative;
+}
+.panel-title{
+	background:url('images/blank.gif') no-repeat;
+}
+.panel-header-noborder{
+	border-width:0px;
+}
+.panel-body{
+	overflow:auto;
+	border-top-width:0px;
+}
+.panel-body-noheader{
+}
+.panel-body-noborder{
+	border-width:0px;
+}
+.panel-noscroll{
+	overflow:hidden;
+}
+.tabs-container{
+	overflow:hidden;
+	background:#fff;
+}
+.tabs-header{
+	background:#0059a5;
+	border-bottom:0px;
+	position:relative;
+	overflow:hidden;
+	padding:0px;
+	padding-top:5px;
+	overflow:hidden;
+}
+.tabs-header-noborder{
+	border:0px;
+}
+.tabs-header-plain{
+	border:0px;
+	background:transparent;
+}
+.tabs-scroller-left{
+	position:absolute;
+	left:0px;
+	top:-1px;
+	width:18px;
+	height:25px!important;
+	height:25px;
+	font-size:1px;
+	display:none;
+	cursor:pointer;
+	background:#efefef url('images/tabs_leftarrow.png') no-repeat 1px 5px;
+	margin-top:6px;
+}
+.tabs-scroller-right{
+	position:absolute;
+	right:0;
+	top:-1px;
+	width:18px;
+	height:25px!important;
+	height:25px;
+	font-size:1px;
+	display:none;
+	cursor:pointer;
+	background:#efefef url('images/tabs_rightarrow.png') no-repeat 2px 5px;
+	margin-top:6px;
+}
+.tabs-tool{
+	position:absolute;
+	top:-1px;
+	overflow:hidden;
+}
+.tabs-header-plain .tabs-scroller-left{
+	top:5px;
+	height:25px!important;
+	height:25px;
+}
+.tabs-header-plain .tabs-scroller-right{
+	top:5px;
+	height:25px!important;
+	height:25px;
+}
+.tabs-header-plain .tabs-tool{
+	top:5px;
+	padding-top:0;
+}
+
+.tabs-header-plain .tabs-tool{
+	top:2px;
+	padding-top:0;
+}
+.tabs-scroller-over{
+	background-color:#fafafa;
+}
+.tabs-wrap{
+	position:relative;
+	left:0px;
+	overflow:hidden;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.tabs-scrolling{
+	margin-left:18px;
+	margin-right:18px;
+}
+.tabs{
+	list-style-type:none;
+	height:25px;
+	padding-left:4px;
+	width:5000px;
+}
+.tabs li{
+	float:left;
+	display:inline-block;
+	margin-right:4px;
+	margin-bottom:-1px;
+	padding:0;
+	position:relative;
+	-moz-border-radius-topleft:2px;
+	-moz-border-radius-topright:2px;
+	-webkit-border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+}
+.tabs li a.tabs-inner{
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+	background:#027be4;
+	font-family:"\5FAE\8F6F\96C5\9ED1";
+	font-size:15px;
+	margin:0px;
+	padding:0px 15px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	white-space:nowrap;
+	-moz-border-radius-topleft:2px;
+	-moz-border-radius-topright:2px;
+	-webkit-border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+}
+.tabs li a.tabs-inner:hover{
+	background:#fff;
+	color:#333;
+}
+.tabs li.tabs-selected{
+}
+.tabs li.tabs-selected a.tabs-inner{
+	color:#3F3F3F;
+	background:#fff;
+	outline:none;
+}
+.tabs li.tabs-selected a:hover.tabs-inner{
+	cursor:default;
+	pointer:default;
+}
+.tabs-p-tool{
+	position:absolute;
+	right:16px;
+	top:7px;
+	display:block;
+}
+.tabs-p-tool a{
+	display:inline-block;
+	font-size:1px;
+	width:12px;
+	height:12px;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.tabs-p-tool a:hover{
+	opacity:1;
+	filter:alpha(opacity=100);
+	cursor:hand;
+	cursor:pointer;
+	background-color:#D3D3D3;
+}
+.tabs-with-icon{
+	padding-left:18px;
+}
+.tabs-icon{
+	position:absolute;
+	width:16px;
+	height:16px;
+	left:10px;
+	top:5px;
+}
+.tabs-closable{
+	padding-right:8px;
+}
+.tabs li a.tabs-close{
+	position:absolute;
+	font-size:1px;
+	display:block;
+	padding:0px;
+	width:11px;
+	height:11px;
+	top:7px;
+	right:5px;
+
+	background:url('images/icon_close.png') no-repeat 2px 2px;
+}
+.tabs li a:hover.tabs-close{
+
+	cursor:hand;
+	cursor:pointer;
+	background-color:#D3D3D3;
+}
+
+
+.tabs-panels{
+	overflow:hidden;
+}
+.tabs-panels-noborder{
+	border:0px;
+}

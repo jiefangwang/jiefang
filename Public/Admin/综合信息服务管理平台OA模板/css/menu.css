@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+/* common styling */
+.menu{font-family: verdana, arial, sans-serif; margin:6px 30px;float:left;}
+.menu ul li a, .menu ul li a:visited{display:block; text-decoration:none; text-align:left;}
+.menu ul{padding:0; margin:0;list-style-type: none;}
+.menu ul li{float:left; position:relative; height:30px; line-height:30px;}
+.menu ul li ul{display: none;}
+/* specific to non IE browsers */
+.menu ul li:hover ul{display:block; position:absolute; bottom:30px; left:0; padding-bottom:30px;}
+.menu ul li:hover ul li a.hide{}
+.menu ul li:hover ul li{display:block; width:151px; clear:both;}
+.menu ul li:hover ul li:hover a.hide{}
+.menu ul li:hover ul li ul{display: none;}
+.menu ul li:hover ul li a{display:block; width:100%;}
+.menu ul li:hover ul li:hover{background:url(../images/category_tab.jpg) no-repeat;}
+.menu ul li:hover ul li:hover ul{display:block; position:absolute; left:160px; bottom:-30px;}
+.menu ul li:hover ul li:hover ul li a{background:url(../images/icon_sanjiao.png) no-repeat 10px center; padding-left:18px;}
+.menu ul li:hover ul li:hover ul li:hover{background:url(../images/sidebar_tab.png) no-repeat center 6px;}
+.menu ul li:hover ul.left{left:-105px;}
+.menu ul li:hover ul li:hover ul.left{left:-210px;}

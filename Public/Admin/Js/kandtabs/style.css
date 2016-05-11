@@ -1,0 +1,165 @@
+﻿html, body { *overflow-x:hidden;
+}
+body { padding:1px 0; margin:0; font:14px "微软雅黑"; }
+pre { padding:5px; border:1px solid #DDD; background:#FFC; line-height:20px; _letter-spacing:-1px }
+ul { margin:0; padding:0 0 0 15px }
+ol { margin:0; padding:0 0 0 25px }
+li { line-height:22px; }
+p { margin:0; padding:5px 0 }
+em { font:bold 14px Arial; color:#066 }
+blockquote { border:1px solid #ddd; padding:5px; margin:0; background:#f9f9f9; line-height:1.8 }
+table{border:1px solid #ddd;border-width:1px 0 0 1px;}
+table th{padding:5px 10px;line-height:2;border:1px solid #ddd;border-width:0 1px 1px 0;background:#f5f5f5}
+table td{padding:5px 10px;line-height:2;border:1px solid #ddd;border-width:0 1px 1px 0}
+#page { width:1000px; margin:0 auto; overflow:hidden }
+#header { margin:0 0 20px; }
+#header h1 { margin:0; font-family:"微软雅黑" }
+#header h4 { margin:0; font-size:14px; color:#999 }
+#intro { position:relative }
+#intro .changelog ul { list-style:outside square none; margin:0 0 0 30px }
+#intro h4 { margin:0; padding:5px 0; font-size:14px; }
+#demo h3 { padding:15px 0 0; border-top:1px dashed #DDD; font-size:18px; font-family:"微软雅黑"; clear:both }
+#demo ul { padding:0; list-style:none; overflow:hidden; margin:0 -10px; zoom:1 }
+#demo ul li { width:340px; float:left }
+#demo ul li .kandyTabs, #demo ul li .kandyFold, #demo .kandySlide { margin:0 10px 20px; }
+#footer { text-align:center; font-size:12px; color:#999; clear:both }
+#footer a { color:#999 }
+/*=custom tab css*/
+.kandyTabs { margin:0 0 20px }
+.tabtitle { color:#666; font-family:"微软雅黑"; }
+.tabbtn { cursor:default }
+.kandyTabs pre, .kandyFold pre { margin:0 }
+#intro .tabexcept { position:absolute; right:0; top:7px; font-size:12px; color:#666 }
+#intro .lastmodify { padding:5px; text-align:right; position:static; margin:2px 0 0 }
+#intro .tabtitle { padding:0 0 0 3px; }
+#intro .tabbtn { background:none; border:none; border-right:1px dashed #ccc; margin:0 0 2px; padding:0 8px; border-radius:0 }
+#intro .tabcur { background:#FFF; border:1px solid #DDD; margin:0 0 -1px -3px; border-bottom:1px solid #FFF; padding:0 12px 0 8px; border-radius:5px 20px 0 0 }
+#intro .kandyTabs { margin:0; }
+#intro .tabbtn { cursor:pointer }
+#intro .tabcont p{ line-height:1.5 }
+#intro .tabnav { margin:-24px 0 3px 3px; color:#666  }
+#intro .tabprev:hover, #intro .tabnext:hover { color:#F00 }
+#intro .tabprevno, #intro .tabnextno { color:#ccc!important }
+#intro .tabpage { margin:0 5px;}
+#intro .kandyTabs .tabcont { margin:0 }
+#intro .kandyTabs .tabbtn { cursor:default }
+#intro .kandyFold { border-width:1px; }
+#intro .kandyFold .tabbtn { cursor:pointer; border:none; border-top:1px solid #DDD; margin:-1px 0 0; font:12px Arial; padding:5px 10px; background:#EEE; position:static }
+#intro .kandyFold .tabcur { cursor:default; border-bottom:1px dashed #ddd; font:bold 14px Arial; background:#F5F5F5; border-radius:0 }
+#intro .kandyFold .tabon { background:#F5F5F5; font-weight:bold }
+#intro .kandyFold .tabcont { font-size:12px }
+#fade { padding:0; overflow:hidden;border:1px solid #ddd;}
+#fade .tabtitle { text-align:left; background:#DDD; padding:3px 0 0; box-shadow:0 -5px 10px #c9c9c9 inset }
+#fade .tabtitle .tabbtn { border:none; background:none; float:none; display:inline-block; cursor:pointer}
+#fade .tabtitle .tabcur { border:1px solid #ccc; border-bottom-color:#fff; background:#fff }
+#fade .tabbody { border:none; margin:0 }
+#fade .tabbody .tabcont { background:none; margin:1px 0 0 }
+#slifade { position:relative }
+#slifade .tabtitle { position:absolute; right:2px; bottom:3px; z-index:4; border:none; }
+#slifade .tabtitle .tabbtn { margin:3px 0 0 2px; border-radius:5px; border-color:#ddd; cursor:pointer}
+#slifade .tabtitle .tabcur { border:1px solid #DDD; border-top:1px solid #FFF; margin:0 0 0 2px; line-height:27px; border-radius:0 0 5px 5px }
+#slifade .tabbody { margin:0 0 28px; border-width:1px; border-radius:5px 5px 0 0 }
+#slide { padding:0; border:1px solid #DDD; overflow:hidden; width:318px; }
+#slide .tabtitle { line-height:28px }
+#slide .tabtitle .tabbtn { background:none; border-width:0 0 0 1px; cursor:pointer; width:67px; text-align:center; border-radius:0; margin:0 0 0 -1px }
+#slide .tabtitle .tabcur { background:#FFF; cursor:default; width:69px; }
+#slide .tabbody { border-width:1px 0 0 }
+#rollleft { overflow:hidden }
+#rollleft .tabtitle { float:left; margin:0 2px -2px 0; border:none; overflow:visible; }
+#rollleft .tabtitle .tabbtn { display:block; width:50px; margin:0 0 2px; background:none; border:1px solid #DDD; cursor:pointer; float:none; border-radius:5px 0 0 5px }
+#rollleft .tabtitle .tabcur { border-right-color:#fff; background:#fff; cursor:default; position:relative; z-index:10; width:53px; margin:0 -3px 2px 0; text-align:center }
+#rollleft .tabbody { float:right; border-radius:0 5px 5px 0 }
+#rollleft .tabcont { overflow:hidden; }
+#roll { position:relative;}
+#roll .tabtitle { float:right; height:29px }
+#roll .tabtitle .tabbtn { background:none; margin:0 0 2px 2px; cursor:pointer }
+#roll .tabtitle .tabcur { background:#FFF; cursor:default; line-height:27px; cursor:default }
+#roll .tabbody { clear:both }
+#roll .tabnav{  left:2px; top:5px; color:#666}
+#roll .tabnav em { color:#999; margin:0 3px }
+/*=custom fold css*/
+#fold-fade .tabbtn { cursor:pointer }
+#fold-fade .tabcur { display:none; }
+.verfold li { width:510px!important }
+.verfold li dl { padding:5px; border:1px solid #DDD; margin:0 10px 20px }
+.verfold li dl .tabbtn { width:40px; height:220px; margin:0; padding:0; border:1px solid #DDD; text-align:center; }
+.verfold li dl .tabcont { height:210px; margin:auto; padding:5px; overflow:auto }
+.verfold li dl dd pre { margin:0 }
+#fold-left .tabbtn { cursor:pointer; }
+#fold-left .tabon { background:#F5F5F5 }
+#fold-left .tabcur { border-right:1px dashed #DDD; cursor:default; background:#F5F5F5; }
+#fold-left .tabcont { border:1px solid #DDD; border-left:none; }
+#fold-left .tabfold { padding:0; border:none }
+#fold-right .tabbtn { background:#f5f5f5; border:1px solid #FFF; }
+#fold-right .tabcur { background:#eee; }
+#fold-right .tabcont { background:#eee; border:1px solid #FFF; }
+#fold-right .tabfold { padding:0; border:none }
+/*=custom slide css*/
+.kandySlide li{ list-style:none }
+.kandySlide img{display:block}
+#imgslide { border:1px solid #DDD; padding:3px; width:490px; margin:0 0 20px!important; float:left; }
+#imgslide .tabbody { position:relative; z-index:2; }
+#imgslide .tabprocess { position:absolute; width:496px; height:176px; z-index:0; left:0; top:0; background:#F60; }
+#imgnavslide { border:1px solid #DDD; padding:3px; width:490px; margin:0 0 20px!important; float:right; position:relative; *height:170px; *overflow:hidden }
+#imgnavslide .tabtitle { display:none; }
+#imgnavslide .tabnav { line-height:1; zoom:1; }
+#imgnavslide .tabnav em { position:absolute; left:0; top:60px; padding:10px 5px; background:#FFF; filter:alpha(opacity=50); opacity:.5; font-size:30px; }
+#imgnavslide .tabnav em:hover { color:#F00; filter:alpha(opacity=80); opacity:.8; cursor:pointer }
+#imgnavslide .tabnav .tabprevno, #imgnavslide .tabnav .tabnextno { display:none }
+#imgnavslide .tabnav .tabnext { right:0; left:auto; }
+#imgnavslide .tabpage { position:absolute; left:218px; top:68px; padding:10px; font:bold 20px Arial; background:#FFF; filter:alpha(opacity=50); opacity:.5; -moz-border-radius:10px; color:#F00; zoom:1; }
+#imgnavslide .tabprocess { position:absolute; left:218px; bottom:63px; filter:alpha(opacity=50); opacity:.5; }
+#customslide { clear: both; margin: 0 0 20px!important; border:1px solid #DDD; padding:4px; }
+#customslide .tabtitle { display:none }
+#customslide .tabbody{*margin:0 0 -3px}
+#customslide .tabcont { position:relative; zoom:1 }
+#customslide .tabcont p { position:absolute; bottom:0; left:0; width:100%; background:#000; color:#FFF; text-indent:10px; font-size:12px; border-radius:0 0 5px 5px; }
+/*=custom loop css*/
+#imgloop { float:left; margin:0 0 20px; width:288px; zoom:1; _margin:0 41px 20px 0 }
+.kandyLoop .tabtitle { padding:7px 5px 0; margin-right:33px; }
+.kandyLoop .tabbtn { cursor:pointer }
+.kandyLoop .tabcur { cursor:default }
+.kandyLoop .tabbody { padding:10px 5px; clear:both; _overflow:hidden; zoom:1 }
+.kandyLoop p { display:inline; }
+#imgloop .tabcont{ overflow:hidden;}
+#imgloop p { float:left;padding:0 }
+.kandyLoop p img { border:1px solid #CCC; margin:0 5px; vertical-align:text-bottom; float:left; width:80px; height:80px; }
+.kandyLoop .tabnav { position:absolute; top:7px; right:5px; }
+.kandyLoop .tabnav em { display:block; float:left; margin:0 0 0 5px; height:10px; font:10px/10px Arial; width:10px; text-align:center; overflow:hidden; border:1px solid #CCC; background:#DDD; color:#F30 }
+.kandyLoop .tabnav em:hover { background:#F30; color:#fff; border-color:#C00 }
+.kandyLoop .tabnav .tabprevno, .kandyLoop .tabnav .tabnextno { background:#DDD!important; color:#CCC!important; border-color:#CCC!important }
+.kandyLoop .tabpage { display:none }
+.kandyLoop .tabexcept { float:left; font:bold 12px Arial; margin:4px 0 0 4px; padding:0; padding:0 0 3px }
+#imgscroll { width:656px; margin:0 0 20px 44px; float:left; _float:none; }
+#imgscroll .tabtitle { margin-right:33px }
+#imgscroll .tabbody { padding:5px }
+#imgscroll .tabcont { margin:0 -5px 0 0 }
+#imgscroll .tabcont p { float:left; }
+#nolooproll { clear:both;position:relative }
+#nolooproll .tabbody{padding:10px 25px;overflow:hidden;zoom:1}
+#nolooproll .tabcont{height:50px;line-height:40px;background:#def;color:#123;padding:0 10px;border:1px solid #abc;margin-right:-15px;overflow:hidden;}
+#nolooproll .tabcont b{cursor:pointer;}
+#nolooproll .tabnav em{position:absolute;height:52px;width:25px;font:25px/52px Arial;top:13px;overflow:hidden;background:#fff;text-align:center}
+#nolooproll .tabnav{*height:0;font:0/0 arial;}
+#nolooproll .tabnav .tabprev{left:3px;}
+#nolooproll .tabnav .tabnext{right:3px;}
+#nolooproll .tabprevno,
+#nolooproll .tabnextno{color:#ccc}
+/*=custom step css*/
+.kandyStep{width:484px;float:left;margin:0 0 20px;}
+.kandyStep .tabbtn{width:96px;}
+.kandyStep .tabcur{width:98px;}
+.kandyStep .tabcont{padding:10px;line-height:1.5}
+.kandyStep input{border:1px solid #ddd;padding:2px;height:20px;line-height:20px;}
+.kandyStep .err{border-color:#F00}
+#simplestep{margin:0 20px 20px 0}
+#simplestep .tabnav .tabprevno,
+#simplestep .tabnav .tabnextno{ display:none }
+/*=custom scroll/deladd/api css*/
+#scroll .tabtitle{padding:0 23px!important}
+#scroll .tabscroll i{border:1px solid #d5d5d5;height:18px;width:18px;text-align:center;font:bold 13px/18px Arial;display:block;position:absolute;border-radius:4px;margin:0;top:2px;background:#fbfbfb}
+
+#scroll .tabright{right:0;}
+#scroll .tableftno, #scroll .tabrightno{background:#eee!important;border-color:#ddd}
+#tabapi{background:#eee;padding:5px 10px;margin:-10px 0 20px 10px;color:#ccc}
+#tabapi b{font:12px "微软雅黑";white-space:nowrap;cursor:pointer;color:#666}
