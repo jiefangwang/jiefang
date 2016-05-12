@@ -10,6 +10,16 @@ class AdminController extends Controller
 {
     protected function _initialize()
     {
-        //exit('134');
+        //添加权限
+        $module_name = MODULE_NAME;
+        $controller_name =CONTROLLER_NAME;
+        $action_name = ACTION_NAME;
+        $node_name = $module_name.'/'.$controller_name.'/'.$action_name;
+        $node = M('node')->where(array('name'=>$node_name))->field('id')->find();
+        if(!$node){
+            $data['name'] = $node_name;
+            $data['title'] = '权限';
+            $re = R('Api/Common/add',array('node',$data));
+        }
     }
 }

@@ -28,7 +28,7 @@ return array(
     // 标签右
     'TAGLIB_END'            =>  '}>',
     //自动加载扩展函数库
-    "LOAD_EXT_FILE"         =>   "Function",
+    "LOAD_EXT_FILE"         =>   "common",
     //Auth权限设置
     // 'AUTH_CONFIG'           =>   array(
     //     // 认证开关

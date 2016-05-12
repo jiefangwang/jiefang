@@ -104,7 +104,7 @@ function addTab(url, title,id) {
     }
 	
 	var href="<a id=\"tabiframe\" href=\""+url+""+tag+"h:"+thisheight+"\" rel=\"nofollow iframe\"/>";
-	alert(href);
+	//alert(href);
 	//title="<img src=\"../hbkh/res/images/house.png\" width=\"16\" height=\"16\"/> "+title;
 	tab.add(title,href,true);
 	//$(".menuwrap").hide(200);

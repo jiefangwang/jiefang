@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>G.net综合信息服务管理平台</title>
+<title>街坊网后台管理系统</title>
 <link rel="stylesheet" href="__PUBLIC__/Admin/Css/global.css" type="text/css"/>
 <link rel="stylesheet" href="__PUBLIC__/Admin/Css/index.css" type="text/css"/>
 <link rel="stylesheet" href="__PUBLIC__/Admin/Css/menu.css" type="text/css"/>
@@ -38,7 +38,13 @@
               </div>
                <div class="time"> <span id="h1"></span> <span id="h2"></span><strong>:</strong> <span id="m1"></span> <span id="m2"></span><strong>:</strong> <span id="s1"></span> <span id="s2"></span> </div>
                <div class="date" id="currentime"></div>
-               <div class="welcome_wz"><img src="__PUBLIC__/Admin/Image/welcome_wz.png" width="400" height="112" /></div>
+               <div class="welcome_wz">
+                    <!-- <img src="__PUBLIC__/Admin/Image/welcome_wz.png" width="400" height="112" /> -->
+                    <div>
+                        欢迎进入<br/>
+                        街坊网后台管理系统
+                    </div>
+                </div>
              </div>
           </div>
          </div>
@@ -177,7 +183,7 @@
     <ul class="desktop_wrap">
        <li>
         <p>通讯录</p>
-        <a href="#" onclick="window.top.addTab('list.html','通讯录');return false;"><img src="__PUBLIC__/Admin/Image/icon_2.png" width="56" height="58" /></a></li>
+        <a href="javascript:;" onclick="window.top.addTab('list.html','通讯录');return false;"><img src="__PUBLIC__/Admin/Image/icon_2.png" width="56" height="58" /></a></li>
        <li>
         <p>工作任务</p>
         <a href="#" onclick="parent.addTab('list.html','工作任务')"><img src="__PUBLIC__/Admin/Image/icon_3.png" width="64" height="57" /></a></li>
@@ -194,5 +200,8 @@
   </div>
  </div>
  </div>
+ <style type="text/css">
+    .welcome_wz div{font-size:40px;color:white;width:400px;height:112px;font-weight:bold;text-align:center;}
+ </style>
 </body>
 </html>
