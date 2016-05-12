@@ -1,24 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>街坊网后台管理系统</title>
-<link rel="stylesheet" href="__PUBLIC__/Admin/Css/global.css" type="text/css"/>
-<link rel="stylesheet" href="__PUBLIC__/Admin/Css/index.css" type="text/css"/>
-<link rel="stylesheet" href="__PUBLIC__/Admin/Css/menu.css" type="text/css"/>
-<script type="text/javascript" src="__PUBLIC__/Admin/Js/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Admin/Js/kandtabs/kandytabs.pack.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Admin/Js/easing.js"></script>
-<link rel="stylesheet" href="__PUBLIC__/Admin/Js/kandtabs/kandytabs.css" type="text/css" /> 
-<script src="__PUBLIC__/Admin/Js/autoheight.js" type="text/javascript"></script>
-<script src="__PUBLIC__/Admin/Js/admin.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/jiefang/Public/Admin/Css/global.css" type="text/css"/>
+<link rel="stylesheet" href="/jiefang/Public/Admin/Css/index.css" type="text/css"/>
+<link rel="stylesheet" href="/jiefang/Public/Admin/Css/menu.css" type="text/css"/>
+<script type="text/javascript" src="/jiefang/Public/Admin/Js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/jiefang/Public/Admin/Js/kandtabs/kandytabs.pack.js"></script>
+<script type="text/javascript" src="/jiefang/Public/Admin/Js/easing.js"></script>
+<link rel="stylesheet" href="/jiefang/Public/Admin/Js/kandtabs/kandytabs.css" type="text/css" /> 
+<script src="/jiefang/Public/Admin/Js/autoheight.js" type="text/javascript"></script>
+<script src="/jiefang/Public/Admin/Js/admin.js" type="text/javascript"></script>
  <!--[if lt IE 7]>       
- <script src="__PUBLIC__/Admin/Js/fixPNG.js"></script>         
+ <script src="/jiefang/Public/Admin/Js/fixPNG.js"></script>         
  <script>
  DD_belatedPNG.fix('img,span');
  </script>     
 <![endif]-->
-<link href="__PUBLIC__/Admin/Css/lanrenzhijia.css" rel="stylesheet" type="text/css" />
+<link href="/jiefang/Public/Admin/Css/lanrenzhijia.css" rel="stylesheet" type="text/css" />
  <script type="text/javascript"> 
     var tab,index=0;
     $(function() {
@@ -53,7 +53,7 @@
 <!-- header -->
 <div class="header" region="north" border="true" >
 <div class="logo fleft">
-    <!-- <img src="__PUBLIC__/Admin/Image/logo.png" width="344" height="49" /> -->
+    <!-- <img src="/jiefang/Public/Admin/Image/logo.png" width="344" height="49" /> -->
     <div>街坊网后台管理系统</div>
 </div>
 <div class="header_right">
@@ -70,7 +70,7 @@
 
  <dl id="slide" >
   <dt>我的桌面</dt>
-    <dd><iframe id=centerFrame name="centerFrame" class="centerFrame" frameborder="0" style="width: 100%;height:110px; overflow-x: hidden; overflow-y:auto" noresize="noresize" scrolling="auto" src="__URL__/center"></iframe></dd>  
+    <dd><iframe id=centerFrame name="centerFrame" class="centerFrame" frameborder="0" style="width: 100%;height:110px; overflow-x: hidden; overflow-y:auto" noresize="noresize" scrolling="auto" src="/jiefang/index.php/Admin/Index/center"></iframe></dd>  
  </dl>
 
 
@@ -80,13 +80,13 @@
 <!-- 菜单 -->
 <div class="menu" style="z-index:99999; position:absolute;">
 <ul>
-<li><a class="hide" href="#"><img src="__PUBLIC__/Admin/Image/menu.jpg" width="66" height="31" /></a>
+<li><a class="hide" href="#"><img src="/jiefang/Public/Admin/Image/menu.jpg" width="66" height="31" /></a>
 <!--[if lte IE 6]>
-<a href="#"><img src="__PUBLIC__/Admin/Image/menu.jpg" width="66" height="31" />
+<a href="#"><img src="/jiefang/Public/Admin/Image/menu.jpg" width="66" height="31" />
 <table><tr><td>
 <![endif]-->
     <ul  class="category" style="width:321px; background:url(images/menu_bg.jpg) repeat-y; padding-top:10px; border:2px solid #0059a5; border-bottom:none;">
-    <div class="people blue"><span><img src="__PUBLIC__/Admin/Image/people.jpg" width="29" height="29" /></span><strong>李某</strong></div>
+    <div class="people blue"><span><img src="/jiefang/Public/Admin/Image/people.jpg" width="29" height="29" /></span><strong>李某</strong></div>
     <li><a href="#" class="icon_a">新闻中心</a>
       <!--[if lte IE 6]>
   <a class="sub" href="#" title="新闻中心">新闻中心
@@ -199,9 +199,9 @@
 </div>
     <!-- -->
     <div class="footer_right"><span class="number">在线人数<strong>999</strong>人</span>
-     <a href="#" class="tixing"><img src="__PUBLIC__/Admin/Image/tixing.png" width="16" height="16" /></a>
-     <a href="#" class="xiaoxi"><img src="__PUBLIC__/Admin/Image/youjian.png" width="20" height="13" /></a>
-     <a href="#" class="liaotian"><img src="__PUBLIC__/Admin/Image/liaotian.png" width="27" height="19" /></a>
+     <a href="#" class="tixing"><img src="/jiefang/Public/Admin/Image/tixing.png" width="16" height="16" /></a>
+     <a href="#" class="xiaoxi"><img src="/jiefang/Public/Admin/Image/youjian.png" width="20" height="13" /></a>
+     <a href="#" class="liaotian"><img src="/jiefang/Public/Admin/Image/liaotian.png" width="27" height="19" /></a>
     </div>
     <div class="clear"></div>
   </div>

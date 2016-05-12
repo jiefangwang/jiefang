@@ -32,7 +32,15 @@ class PublicController extends Controller
                 if($md5 == $admin['password']){
 
                     //登录成功,存session
+                    session('admin.admin_id',$admin['id']);
+                    session('admin.is_login','1');
+                    session('admin.name',$admin['name']);
 
+                    //更新登录时间
+                    $mo->where($map)->save(array('update_time'=>time()));
+                    $this->redirect('Admin/Index/index');
+                }else{
+                    $this->error('密码错误！');
                 }
             } 
             
