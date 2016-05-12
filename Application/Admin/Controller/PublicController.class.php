@@ -45,7 +45,20 @@ class PublicController extends Controller
             } 
             
         }else{
+//dump(encrypt('123456','ABCD'));exit;            
             $this->display();
         }
+    }
+
+
+    /**
+     * 退出
+     * @author 任广正
+     */
+
+    public function logout()
+    {
+        session('admin',null);
+        $this->redirect('Public/index');
     }
 }

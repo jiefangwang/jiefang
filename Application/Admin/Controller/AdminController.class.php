@@ -21,5 +21,10 @@ class AdminController extends Controller
             $data['title'] = '权限';
             $re = R('Api/Common/add',array('node',$data));
         }
+        //判断用户有无登录
+        if(session('admin.is_login') !== '1'){
+            $this->redirect('Admin/Public/login');
+            exit();
+        }      
     }
 }

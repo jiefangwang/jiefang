@@ -72,7 +72,8 @@ class MemberController extends AdminController
             if(is_array($role)){
                 $info[$key]['role'] = $role['title'];
             }
-        }       
+        }   
+//dump($info);exit;            
         $this->assign('count',$count);
         $this->assign('page',$Page->show());
         $this->assign('info',$info);

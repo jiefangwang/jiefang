@@ -62,7 +62,7 @@
   <li><a href="#" title="更换皮肤" id="theme"></a></li>
   <li><a href="#" title="设置" id="Setup"></a></li>
   <li><a href="#" title="刷新" id="refresh"></a></li>
-  <li><a href="#" title="注销登录" id="logout"></a></li>
+  <li><a href="__MODULE__/Public/logout" title="注销登录" id="logout"></a></li>
 </ul>
 </div>
 </div>
@@ -188,7 +188,10 @@
   </a>
   <![endif]-->
     </li>
-    <div class="out_quit"><a href="#" title="注销" class="logout">注销</a><a href="#" title="退出" class="quit">退出</a></div>
+    <div class="out_quit">
+      <a href="__MODULE__/Public/logout" title="注销" class="logout">注销</a>
+      <a href="__MODULE__/Public/logout" title="退出" class="quit">退出</a>
+    </div>
     </ul>
 <!--[if lte IE 6]>
 </td></tr></table>
